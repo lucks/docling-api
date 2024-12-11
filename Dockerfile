@@ -1,7 +1,7 @@
 # Use a base image with CUDA support and the desired Python version
 FROM python:3.12-slim-bookworm
 
-ARG CPU_ONLY=false
+ARG CPU_ONLY=true
 WORKDIR /app
 
 RUN apt-get update \
